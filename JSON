@@ -1,0 +1,40 @@
+To insert record 
+url: http://localhost:8081/api/create
+Request method : POST
+json {
+    "firstName":"nivetha",
+    "lastName":"mohan",
+    "emailId":"nivetha@gmail.com",
+    "age":"28",
+    "gender":"female",
+    "address":"23sva anada bangalore"
+}
+
+To update record
+url : http://localhost:8081/api/update
+Request method :POST
+json {
+    "id":1,
+    "firstName":"prachi",
+    "lastName":"priya prasad",
+    "emailId":"prachi@gmail.com",
+    "age":"22",
+    "gender":"female",
+    "address":"23sva anada  nilayabangalore"
+}
+
+To find all non deleted records
+url : http://localhost:8081/api/findAll
+RequestMethod  : GET
+
+To find all deleted records
+url :http://localhost:8081/api/findAllDeletedRecords
+Request method :GET
+
+To find a particular record by id
+url: http://localhost:8081/api/findById/1
+Request method :GET
+
+To delete a record by id
+url :http://localhost:8081/api/deleteById/1
+Request method: GET
